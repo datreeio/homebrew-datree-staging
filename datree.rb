@@ -5,20 +5,20 @@
 class Datree < Formula
   desc ""
   homepage "https://datree.io/"
-  version "0.8.0-staging"
+  version "0.8.2-staging"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/datreeio/datree/releases/download/0.8.0-staging/datree-cli_0.8.0-staging_Darwin_x86_64.zip"
-    sha256 "1898d09a50b2f06a5276091e8a7fa72357896769eb5ef0743cbc0566455c85af"
+    url "https://github.com/datreeio/datree/releases/download/0.8.2-staging/datree-cli_0.8.2-staging_Darwin_x86_64.zip"
+    sha256 "59e25390350f3887d65e963c768fb09f65cd3b3d8a0381cc502a595fac2ebf54"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/datreeio/datree/releases/download/0.8.0-staging/datree-cli_0.8.0-staging_Linux_x86_64.zip"
-    sha256 "c3dc3eb79ecf341da6bcdf592941614f3cb45e927d5ab1ba43f96318fbcc2ba2"
+    url "https://github.com/datreeio/datree/releases/download/0.8.2-staging/datree-cli_0.8.2-staging_Linux_x86_64.zip"
+    sha256 "4bdc4f567bf32bf23203ac0acdcb48e5061e2875d9940d25615963ac97c3957e"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/datreeio/datree/releases/download/0.8.0-staging/datree-cli_0.8.0-staging_Linux_arm64.zip"
-    sha256 "770c1e6228af4f0cf92c36b99b2f20b06f2ce7907aa799bc8a7f703bf30744da"
+    url "https://github.com/datreeio/datree/releases/download/0.8.2-staging/datree-cli_0.8.2-staging_Linux_arm64.zip"
+    sha256 "d2390b27f884ba7e2c401e535a119e340360d09fb7d76e55d4d1ec37e092d92f"
   end
 
   def install
