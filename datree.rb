@@ -5,20 +5,20 @@
 class Datree < Formula
   desc ""
   homepage "https://datree.io/"
-  version "0.8.2-DAT-3412-fix-brew-version"
+  version "0.8.2-internal"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/datreeio/datree/releases/download/0.8.2-DAT-3412-fix-brew-version/datree-cli_0.8.2-DAT-3412-fix-brew-version_Darwin_x86_64.zip"
-    sha256 "e5ccfaf0c1e875d4e4d84c7dbadbbb66e1a8aeaef63cb733971696ea1e3ad5a0"
+    url "https://github.com/datreeio/datree/releases/download/0.8.2-internal/datree-cli_0.8.2-internal_Darwin_x86_64.zip"
+    sha256 "26bc9a4449ee1dbd25f1fbbfb8781485c015a7dd02f04d541e0fd1af37a3b92b"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/datreeio/datree/releases/download/0.8.2-DAT-3412-fix-brew-version/datree-cli_0.8.2-DAT-3412-fix-brew-version_Linux_x86_64.zip"
-    sha256 "5502b736fcba73ed4c510f02c17dcee1f00ef956a2b87c4371641da5103fcf3b"
+    url "https://github.com/datreeio/datree/releases/download/0.8.2-internal/datree-cli_0.8.2-internal_Linux_x86_64.zip"
+    sha256 "0e1f66818fe2d019111241cf48a11e05b35907580881bfc0bc09e91523d36964"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/datreeio/datree/releases/download/0.8.2-DAT-3412-fix-brew-version/datree-cli_0.8.2-DAT-3412-fix-brew-version_Linux_arm64.zip"
-    sha256 "a4483c088029b6fc906660f9fdddb595272f96a2c4bd91b5683d1a154e8f7b4f"
+    url "https://github.com/datreeio/datree/releases/download/0.8.2-internal/datree-cli_0.8.2-internal_Linux_arm64.zip"
+    sha256 "0cfe54ef851796aa8753bf24ccbd71b807776c7e59249f9bf8da6d64327fd426"
   end
 
   def install
