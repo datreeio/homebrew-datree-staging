@@ -4,19 +4,19 @@
 class Datree < Formula
   desc ""
   homepage "https://datree.io/"
-  version "0.14.69-rc"
+  version "0.14.70-rc"
 
   if OS.mac?
-    url "https://github.com/datreeio/datree/releases/download/0.14.69-rc/datree-cli_0.14.69-rc_Darwin_x86_64.zip"
-    sha256 "6870cb147aafae01638ed7f8b188484887a90581424eb53ed654e4218217fc89"
+    url "https://github.com/datreeio/datree/releases/download/0.14.70-rc/datree-cli_0.14.70-rc_Darwin_x86_64.zip"
+    sha256 "b31d3d4b173d7ee512c66c2abd1f9c2a7192109d6b0ad164036231aad1bec384"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/datreeio/datree/releases/download/0.14.69-rc/datree-cli_0.14.69-rc_Linux_x86_64.zip"
-    sha256 "b2a0c6e0570056f5e2965d3e3e260a20f9440c5113ee448ae3c164a705695ba0"
+    url "https://github.com/datreeio/datree/releases/download/0.14.70-rc/datree-cli_0.14.70-rc_Linux_x86_64.zip"
+    sha256 "88edd5806a679efb764bcdfdcefc83a168286dc630c24335401a45d4e5eddde7"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/datreeio/datree/releases/download/0.14.69-rc/datree-cli_0.14.69-rc_Linux_arm64.zip"
-    sha256 "b1cde40cec2324b5c12ec47ca365eaacd45f297e51ebed28d1e0aa7e66188ada"
+    url "https://github.com/datreeio/datree/releases/download/0.14.70-rc/datree-cli_0.14.70-rc_Linux_arm64.zip"
+    sha256 "036bd58bce5d20730dab2210a8854fcdc1cfc7bbfbcacddda13de38582587af8"
   end
 
   def install
