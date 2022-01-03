@@ -8,15 +8,15 @@ class Datree < Formula
 
   if OS.mac?
     url "https://github.com/datreeio/datree/releases/download/0.14.92-rc/datree-cli_0.14.92-rc_Darwin_x86_64.zip"
-    sha256 "fb9ac8017c79ca23ea4eeea2ad0d0ebd17825ea58842ec9bb60d22991d93cd59"
+    sha256 "615704a29fd430996101de6c611e6f1e3b2f58c11e83fc5cdf2948026eb302f7"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/datreeio/datree/releases/download/0.14.92-rc/datree-cli_0.14.92-rc_Linux_x86_64.zip"
-    sha256 "61bee9f712270a098f2e54362081ff8d16862b4da8a2083c1b77affbbbd4eeb5"
+    sha256 "39fdbf2095093bed392f68d1aec04c9bfd00a2db0a74f9e61c11c6a9313546ba"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://github.com/datreeio/datree/releases/download/0.14.92-rc/datree-cli_0.14.92-rc_Linux_arm64.zip"
-    sha256 "9598b3313ec35015bc878db604e1fbe7909862a7fb3f8e8892d6ea5bdf72de2a"
+    sha256 "d685e5350580bca13c2366d19f674c167d2021e8f842121ba9a3f9d0f23989d7"
   end
 
   def install
