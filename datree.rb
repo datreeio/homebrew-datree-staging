@@ -4,23 +4,23 @@
 class Datree < Formula
   desc ""
   homepage "https://datree.io/"
-  version "1.0.9-rc"
+  version "1.0.10-yishay-rc"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/datreeio/datree/releases/download/1.0.9-rc/datree-cli_1.0.9-rc_Darwin_x86_64.zip"
-    sha256 "6c806007f75325beb55942ff26c797fc9a8250fc7f34cbff4b1e6daa14161629"
+    url "https://github.com/datreeio/datree/releases/download/1.0.10-yishay-rc/datree-cli_1.0.10-yishay-rc_Darwin_x86_64.zip"
+    sha256 "c0ac3ee1b6d17134e8cb45dcec1f8f43ba95ef8b02e47def7b77b4323282ac17"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/datreeio/datree/releases/download/1.0.9-rc/datree-cli_1.0.9-rc_Darwin_arm64.zip"
-    sha256 "232acedf873200b456651ebeab094b57b1d2d2c4daede10e353910b0fef0db38"
+    url "https://github.com/datreeio/datree/releases/download/1.0.10-yishay-rc/datree-cli_1.0.10-yishay-rc_Darwin_arm64.zip"
+    sha256 "405ec7477d98be32d117b37e1e39797108a238a756f9cd364a9383c5ee41d5da"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/datreeio/datree/releases/download/1.0.9-rc/datree-cli_1.0.9-rc_Linux_x86_64.zip"
-    sha256 "3b77f4f906ad0973bb285bee54fbad82b85c64bac9a93866352cd04a1b90c303"
+    url "https://github.com/datreeio/datree/releases/download/1.0.10-yishay-rc/datree-cli_1.0.10-yishay-rc_Linux_x86_64.zip"
+    sha256 "1e9bcbbcc2ff2db202ba7b0d2f916cb154fd03c8da63c23bb4c2cb9f232d403c"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/datreeio/datree/releases/download/1.0.9-rc/datree-cli_1.0.9-rc_Linux_arm64.zip"
-    sha256 "b1c0395f8f9529ef8f7d89fc52108fc44c9b17add60e48d2ddccad42ffe428c8"
+    url "https://github.com/datreeio/datree/releases/download/1.0.10-yishay-rc/datree-cli_1.0.10-yishay-rc_Linux_arm64.zip"
+    sha256 "b963f29e84279bc435f395fe5b96211bfe6022c2fcc9d4162318ef9e74236ed4"
   end
 
   def install
